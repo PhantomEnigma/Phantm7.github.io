@@ -1,1 +1,1 @@
-Its just a website
+Its just a webpage
