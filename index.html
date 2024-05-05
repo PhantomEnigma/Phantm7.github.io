@@ -1,22 +1,154 @@
-<style>
-  *{
-    padding:0;
-    margin:0;
-    box-sizing:border-box
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #444;
+        }
+        body{
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: #929292;
+            background-position: center;
+            height: 100vh;
+        }
+        .center1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 2px #88888800 solid;
+            border-radius: 15px;
+            padding: 20px;
+            padding-bottom: 0;
+            transform: translate(-50%,-50%);
+            width: max-content;
+            background-color: rgba(255, 255, 255, 0.644);
+            backdrop-filter: blur(5px);
+        }
+        
+        .list-no{
+            list-style-type: none;
+            line-height: 1.5;
+        }
+        .hyper-no, a{
+            text-decoration: none;
+            color:rgb(18, 104, 190);
+        }
+        .big-font{
+            font-size: 2rem;
+            color: #555;
+        }
+        .Phantom{
+            
+            animation-name: Phantom-anim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        
+    
+@keyframes Phantom-anim {
+  0% {
+    color: red;
   }
- .parent{
- background-color: #888;
- width: 100%;
-  height: 100%;
-  color:#fff;
- background-position: fixed;
- }
-</style>
-<!--temp-->
-<div class="parent">
-<h1>Phantom Enigma</h1>
-<p>Hello, I am Phantom Enigma (obviously fake name).</p>
-<p>I am learning building roms</p>
-<p>I am a buildbot</p>
-<p>I own a budget smartphone Redmi 8a (olivelite) with 3GB RAM</p>
-</div>
+  10% {
+    color: rgb(255, 166, 0);
+  }
+  20% {
+    color: rgb(250, 250, 1);
+  }
+  40% {
+    color: rgb(0, 255, 21);
+  }
+  50% {
+    color: rgb(0, 230, 218);
+  }
+  60% {
+    color: rgb(0, 119, 255);
+  }
+  80% {
+    color: rgb(206, 29, 206);
+  }
+  100% {
+    color: red;
+  }
+}
+
+
+    .useless{
+        color: #;
+    }
+    .inline{
+     display: flex;
+     width: math(100%+40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .emoji{
+        font-size: 1.5rem;
+    }
+    .inline .elem{
+        width: 50%;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .centertext{
+        text-align: center;
+        display: block;
+    }
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #8888;
+    }
+    .lino:hover{
+        
+        background-color: #ccc8;
+        width: math(100%+36px);
+        margin-left: -18px;
+        margin-right: -18px;
+        padding-left: 10px;
+    }
+    
+    .elem:hover{
+        background-color: #ddd8;
+    }
+    @media only screen and (max-width: 600px){
+        .center1{
+            width: 80%;
+        }
+        body{
+            background-attachment: fixed;
+        }
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="center1">
+        <span class="big-font">Hello, I am <span class="Phantom">Phantom Enigma</span> </span><br><span class="useless">(a fake name to hide my real identity)</span><br><br>
+        <ul class="list-no">
+            <li class="lino"><span class="emoji">&#128187</span> I am a student studying Engg.</li>
+            <li class="lino"><span class="emoji">&#128214</span> Knowledge ~ 0% </li>
+            <li class="lino"><span class="emoji">&#129302</span> Buildbot </li>
+            <li class="lino"><span class="emoji">&#129513</span> Skills - None </li>
+            <li>Ok, you have sucessfully wasted your time on reading this.. <span class="emoji">&#128568</span></li>
+        </ul><br>
+        <div class="line"></div>
+       
+        <div class="inline">
+            <a href="https://github.com/PhantomEnigma" class="elem" style="border-radius: 0 0 0 13px;">Github</a>
+            <a href="https://telegram.me/PhantomEnigma" class="elem" style="border-radius: 0 0 13px 0;">Telegram</a>
+        </diiv>
+    </div>
+</body>
+</html>
