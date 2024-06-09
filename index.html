@@ -32,8 +32,19 @@
             width: max-content;
             background-color: rgba(255, 255, 255, 0.644);
             backdrop-filter: blur(5px);
+            padding-top: 75px;
         }
-        
+        .pfp-box{
+          
+            left: 50%;
+            transform: translate(-50%,-100%);
+            position: absolute;
+        }
+        .pfp{
+            width: 150px;
+            border-radius: 999px;
+            border: solid rgba(255, 255, 255, 0.644) 5px;
+        }
         .list-no{
             list-style-type: none;
             line-height: 1.5;
@@ -125,22 +136,32 @@
     @media only screen and (max-width: 600px){
         .center1{
             width: 80%;
+			padding-top: 60px;
         }
         body{
             background-attachment: fixed;
         }
+		
+        .pfp{
+            width: 120px;
+            border-radius: 999px;
+            border: solid rgb(255, 255, 255) 3px;
+        }
     }
+    
     </style>
     
 </head>
 <body>
     <div class="center1">
+        <div class="pfp-box"><img src="pfp.jpg" alt="" class="pfp"></div>
         <span class="big-font">Hello, I am <span class="Phantom">PHANTOM</span> </span><span class="useless">(@phantm7)</span><br><br>
         <ul class="list-no">
             <li class="lino"><span class="emoji">&#128187</span> I am a student studying Engg.</li>
             <li class="lino"><span class="emoji">&#128214</span> Knowledge ~ 0% </li>
             <li class="lino"><span class="emoji">&#129302</span> Buildbot </li>
             <li class="lino"><span class="emoji">&#129513</span> Skills - None </li>
+			<br>
             <li>You have sucessfully wasted your valuable time on reading this.. <span class="emoji">&#128568</span></li>
         </ul><br>
         
